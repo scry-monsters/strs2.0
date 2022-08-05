@@ -1,0 +1,16 @@
+.hero_main{
+    height: 80vh;
+    width: 100%;
+    .hero_main_content{
+        padding-top: 160px;
+        img{
+            border-radius: 100px;
+            max-height: 200px;
+            height: 100%;
+        }
+        .hero_main_content_text{
+            padding-top: 40px;
+        }
+
+    }
+}   
