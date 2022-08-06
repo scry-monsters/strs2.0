@@ -15,10 +15,11 @@ const HeroSection = () => {
 					<img src={meAvatar} alt="Me in ram" />
 				</div>
 				<div className={classNames(classes.hero_main_content_text)}>
-					<h5>
+					<p>Hey</p>
+					<p>
 						glad you made it here, its been a while since we talked. hope
 						you&apos;ll enjoy my stories.
-					</h5>
+					</p>
 				</div>
 			</div>
 		</div>

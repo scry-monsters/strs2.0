@@ -9,7 +9,15 @@
             height: 100%;
         }
         .hero_main_content_text{
-            padding-top: 40px;
+            padding-top: 20px;
+            text-align: center;
+            max-width: 500px;
+            p:first-child{
+                font-size: 28px;
+            }
+            p:last-child{
+                font-size: 20px;
+            }
         }
 
     }
