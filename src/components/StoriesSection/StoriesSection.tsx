@@ -9,12 +9,11 @@ const StoriesSection = () => {
 			<div
 				className={classNames(
 					classes.stories_main_content,
-					"grid grid-cols-3 flex justify-items-center gap-4"
+					"grid grid-cols-3 gap-4 px-4"
 				)}
 			>
 				<StoryCard />
 				<StoryCard />
-
 				<StoryCard />
 				<StoryCard />
 				<StoryCard />

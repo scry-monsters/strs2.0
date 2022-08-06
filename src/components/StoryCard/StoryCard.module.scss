@@ -1,6 +1,15 @@
 .story_card_main{
-    max-width: 200px;
+    max-width: 350px;
     width: 100%;
-    height: 300px;
-    background-color: coral;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(245, 245, 245);
+    img{
+        width: 100%;
+        max-width: 250px;
+        margin: auto;
+    }
+    .story_card_text_container{
+        padding: 15px 0;
+    }
 }
