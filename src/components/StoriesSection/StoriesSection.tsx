@@ -5,11 +5,11 @@ import StoryCard from "../StoryCard/StoryCard";
 
 const StoriesSection = () => {
 	return (
-		<div className={classNames(classes.stories_main)}>
+		<div id="storiesSection" className={classNames(classes.stories_main)}>
 			<div
 				className={classNames(
 					classes.stories_main_content,
-					"grid grid-cols-3 gap-4 px-4"
+					"grid grid-cols-3 gap-5 py-3 px-4"
 				)}
 			>
 				<StoryCard />

@@ -1,6 +1,7 @@
 .hero_main{
-    height: 80vh;
+    height: 100vh;
     width: 100%;
+    margin-top: 30px;
     .hero_main_content{
         padding-top: 160px;
         img{
@@ -11,12 +12,14 @@
         .hero_main_content_text{
             padding-top: 20px;
             text-align: center;
-            max-width: 500px;
+            max-width: 390px;
             p:first-child{
-                font-size: 28px;
+                font-size: 1.75rem;
+                font-weight: bold;
             }
-            p:last-child{
-                font-size: 20px;
+            p:nth-child(2){
+                font-size: 1.25rem;
+                font-weight: bold;
             }
         }
 
