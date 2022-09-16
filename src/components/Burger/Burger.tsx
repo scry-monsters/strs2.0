@@ -13,12 +13,6 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import MarkEmailReadIcon from "@mui/icons-material/MarkEmailRead";
 
 type Anchor = "left";
-interface Item {
-	id: number;
-	icon: HTMLImageElement;
-	url: string;
-	text: string;
-}
 
 let socialMedia = [
 	{

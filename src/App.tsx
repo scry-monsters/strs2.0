@@ -1,5 +1,3 @@
-import { Container } from "react-bootstrap";
-import Footer from "./components/Footer/Footer";
 import HeroSection from "./components/HeroSection/HeroSection";
 import NavBar from "./components/NavBar/NavBar";
 import StoriesSection from "./components/StoriesSection/StoriesSection";

@@ -1,10 +1,29 @@
 .story_card_main{
     max-width: 350px;
     width: 100%;
+    min-height: 400px;
+    padding: 20px 20px;
     height: 100%;
+    // border: 1px solid rgba(34, 25, 2, 0.598);
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.268);
+    border-radius: 15px;
+    background-color: rgb(255, 255, 255);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px) saturate(100%) contrast(45%) brightness(130%);
     img{
         width: 100%;
         max-width: 250px;
         margin: auto;
+    }
+    .story_card_text_container{
+        padding-top: 30px;
+        .text_container_title{
+            font-size: 25px;
+            font-weight: 900;
+
+        }
     }
 }

@@ -5,14 +5,20 @@ interface Props {
 	color: string;
 	width: number;
 	height: number;
+	text: string;
 }
-const Button: React.FC<Props> = ({ clickity, color, width, height }) => {
+const Button: React.FC<Props> = ({ clickity, color, width, height, text }) => {
 	return (
 		<button
 			onClick={clickity}
-			style={{ backgroundColor: color, width: width, height: height }}
+			style={{
+				backgroundColor: color,
+				width: width,
+				height: height,
+				borderRadius: "10px",
+			}}
 		>
-			Button
+			<p>{text}</p>
 		</button>
 	);
 };

@@ -23,7 +23,7 @@ const HeroSection = () => {
 					<a
 						style={{ backgroundColor: "#ffc107" }}
 						href="#storiesSection"
-						className="inline-flex items-center mt-5 py-2 px-3 text-sm text-center text-white bg-blue-700 rounded-lg "
+						className="inline-flex items-center mt-4 py-2 px-3 text-sm text-center text-white bg-blue-700 rounded-lg "
 					>
 						<p style={{ fontSize: "20px" }}>stories</p>
 						<svg
