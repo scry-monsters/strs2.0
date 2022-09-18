@@ -5,6 +5,7 @@ import Button from "../buttons/Button";
 import { Link } from "react-router-dom";
 
 const StoryCard = ({ data }: any) => {
+	let exzerpt = data.storyItself.substring(0, 80) + "...";
 	return (
 		<div
 			className={classNames(
@@ -24,7 +25,7 @@ const StoryCard = ({ data }: any) => {
 					<p className={classes.text_container_title}>{data.title}</p>
 				</div>
 				<br />
-				<p className="">{data.exzerpt}</p>
+				<p className="">{exzerpt}</p>
 				<div className="mt-3">
 					<Link to={`/story/${data.id}`}>
 						<Button
