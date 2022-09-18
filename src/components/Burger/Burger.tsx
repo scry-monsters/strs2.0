@@ -34,6 +34,12 @@ let socialMedia = [
 		url: "mailto:krbnv.z@gmail.com",
 		text: "Gmail",
 	},
+	{
+		id: 3,
+		icon: GitHubIcon,
+		url: "/about",
+		text: "About",
+	},
 ];
 
 export default function Burger() {

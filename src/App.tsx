@@ -1,15 +1,15 @@
-import HeroSection from "./components/HeroSection/HeroSection";
-import NavBar from "./components/NavBar/NavBar";
-import StoriesSection from "./components/StoriesSection/StoriesSection";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import HomePage from "./components/HomePage/HomePage";
+import StoryPage from "./components/StoryPage/StoryPage";
 
 function App() {
 	return (
-		<>
-			<NavBar />
-			<HeroSection />
-			<StoriesSection />
-			{/* <Footer /> */}
-		</>
+		<BrowserRouter>
+			<Routes>
+				<Route path="/" element={<HomePage />} />
+				<Route path="/about" element={<StoryPage />} />
+			</Routes>
+		</BrowserRouter>
 	);
 }
 

@@ -2,6 +2,7 @@ import React from "react";
 import classNames from "classnames";
 import classes from "./StoryCard.module.scss";
 import Button from "../buttons/Button";
+import { Link } from "react-router-dom";
 
 const StoryCard = ({ data }: any) => {
 	return (
@@ -25,13 +26,15 @@ const StoryCard = ({ data }: any) => {
 				<br />
 				<p className="">{data.exzerpt}</p>
 				<div className="mt-3">
-					<Button
-						clickity={() => console.log("yas queen")}
-						color={"#ffc107"}
-						height={50}
-						width={100}
-						text={"read"}
-					/>
+					<Link to={`/story/${data.id}`}>
+						<Button
+							clickity={() => console.log("yas queen")}
+							color={"#ffc107"}
+							height={50}
+							width={100}
+							text={"read"}
+						/>
+					</Link>
 				</div>
 			</div>
 		</div>
