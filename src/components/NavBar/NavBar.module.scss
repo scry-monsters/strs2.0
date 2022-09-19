@@ -1,11 +1,13 @@
-.main_navbar{
-    // background-color: #005691;
-width: 100%;
-.image_container{
-    width: 100%;
-    max-width: 200px;
-    img{
-
+.navbar__container{
+    width: 100% !important;
+    height: 80px;
+    .logo__image{
+    background-color: transparent !important;
+    max-width: 150px ;
+    margin: 0 auto;
     }
+
 }
+@media (max-width: 992px) { 
+   
 }

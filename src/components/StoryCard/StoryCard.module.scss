@@ -4,7 +4,6 @@
     min-height: 400px;
     padding: 20px 20px;
     height: 100%;
-    // border: 1px solid rgba(34, 25, 2, 0.598);
     border-radius: 10px;
     position: relative;
     box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.268);
@@ -21,10 +20,22 @@
     .story_card_text_container{
         text-align: initial;
         padding-top: 30px;
+        height: 100%;
         .text_container_title{
             font-size: 25px;
             font-weight: 900;
 
         }
+        button{
+            border-radius: 10px;
+            width: 150px;
+            height: 40px;
+            text-align: start;
+            border: 2px solid rgb(255, 255, 255);
+            color:rgb(0, 0, 0);
+            background-color: #ffc107;
+            
+        }
     }
+   
 }

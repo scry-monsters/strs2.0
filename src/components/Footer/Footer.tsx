@@ -5,6 +5,7 @@ import GoogleIcon from "@mui/icons-material/Google";
 import classNames from "classnames";
 import GitHub from "@mui/icons-material/GitHub";
 import { LinkedIn } from "@mui/icons-material";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
 	return (
@@ -20,24 +21,24 @@ const Footer = () => {
 					</div>
 					<div className="col-6 d-flex flex-row justify-content-center align-items-center">
 						<div className={classNames(classes.footer__icon, "")}>
-							<a href="https://www.instagram.com/scry_monsters/">
+							<Link to="https://www.instagram.com/scry_monsters/">
 								<InstagramIcon />
-							</a>
+							</Link>
 						</div>
 						<div className={classNames(classes.footer__icon, "")}>
-							<a href="mailto: krbnv.z@gmail.com">
+							<Link to="mailto: krbnv.z@gmail.com">
 								<GoogleIcon />
-							</a>
+							</Link>
 						</div>
 						<div className={classNames(classes.footer__icon, "")}>
-							<a href="https://github.com/scry-monsters">
+							<Link to="https://github.com/scry-monsters">
 								<GitHub />
-							</a>
+							</Link>
 						</div>
 						<div className={classNames(classes.footer__icon, "")}>
-							<a href="https://www.linkedin.com/in/scry/">
+							<Link to="https://www.linkedin.com/in/scry/">
 								<LinkedIn />
-							</a>
+							</Link>
 						</div>
 					</div>
 				</div>

@@ -1,42 +1,24 @@
 import React from "react";
 import classNames from "classnames";
 import classes from "./StoryCard.module.scss";
-import Button from "../buttons/Button";
 import { Link } from "react-router-dom";
 
 const StoryCard = ({ data }: any) => {
 	let exzerpt = data.storyItself.substring(0, 80) + "...";
 	return (
-		<div
-			className={classNames(
-				classes.story_card_main,
-				"items-center justify-center align-center text-center"
-			)}
-		>
-			<div className={classNames(classes.story_card_image_container, "")}>
-				<img
-					className=""
-					src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Pokebola-pokeball-png-0.png/769px-Pokebola-pokeball-png-0.png"
-					alt="poke"
-				/>
+		<div className={classNames(classes.story_card_main)}>
+			<div
+				className={classNames(classes.story_card_image_container, " d-flex")}
+			>
+				<img className="" src={data.art} alt="poke" />
 			</div>
 			<div className={classNames(classes.story_card_text_container, "")}>
-				<div>
-					<p className={classes.text_container_title}>{data.title}</p>
-				</div>
-				<br />
+				<p className={classes.text_container_title}>{data.title}</p>
 				<p className="">{exzerpt}</p>
-				<div className="mt-3">
-					<Link to={`/story/${data.id}`}>
-						<Button
-							clickity={() => console.log("yas queen")}
-							color={"#ffc107"}
-							height={50}
-							width={100}
-							text={"read"}
-						/>
-					</Link>
-				</div>
+
+				<Link to={`/story/${data.id}`}>
+					<button>read {data.title.substring(0, 5)}...</button>
+				</Link>
 			</div>
 		</div>
 	);

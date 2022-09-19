@@ -9,7 +9,10 @@ const StoryPage = () => {
 	let story = data[storyId];
 	return (
 		<div
-			className={classNames("container text-center", classes.story_page_main)}
+			className={classNames(
+				"container-fluid text-center",
+				classes.story_page_main
+			)}
 		>
 			<div className={classNames(classes.main_text_container)}>
 				<h1>{story.title}</h1>
