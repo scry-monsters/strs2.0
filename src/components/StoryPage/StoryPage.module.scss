@@ -1,6 +1,10 @@
 .story_page_main{
-   height: 100vh; 
+height: 100vh;
    .main_text_container{
+    height: 100%;
+    width: 100%;
+    padding: 20px 15px 20px 15px;
+    word-spacing: 2px;
     h5{
         text-align: justify;
     }

@@ -18,7 +18,7 @@ const StoryCard = ({ data }: any) => {
 
 				<Link to={`/story/${data.id}`}>
 					<button>
-						<p>read {data.title.substring(0, 5)}.. </p>
+						<p>read {data.title.substring(0, 5)}...</p>
 					</button>
 				</Link>
 			</div>

@@ -95,7 +95,7 @@ export default function SwipeableEdgeDrawer(props: Props) {
 				>
 					<Puller />
 					<Typography sx={{ p: 2, color: "text.secondary" }}>
-						<p>🐙</p>
+						<p>‎</p>
 					</Typography>
 				</StyledBox>
 				<StyledBox
