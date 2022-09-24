@@ -4,15 +4,16 @@ import classes from "./NavBar.module.scss";
 import classNames from "classnames";
 import { Link } from "react-router-dom";
 import Burger from "../Burger/Burger";
+// import { useColorMode, useColorModeValue } from "@chakra-ui/react";
+// import { Button } from "react-bootstrap";
+// import { MoonIcon } from "@chakra-ui/icons";
 
 const NavBar = () => {
+	// const { colorMode, toggleColorMode } = useColorMode();
 	return (
 		<div className={classNames(classes.navbar__container, "d-flex flex-row")}>
 			<div className="row" style={{ width: "100%" }}>
-				<div
-					className="col-3 align-items-center justify-content-center pt-4"
-					style={{ cursor: "pointer" }}
-				>
+				<div className="col-3 align-items-center justify-content-center pt-4">
 					<Burger />
 				</div>
 				<div
@@ -29,7 +30,7 @@ const NavBar = () => {
 						/>
 					</Link>
 				</div>
-				<div className="col-3"></div>
+				<div className="col-3 pt-4"></div>
 			</div>
 		</div>
 	);

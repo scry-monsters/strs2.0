@@ -1,16 +1,23 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import HomePage from "./components/HomePage/HomePage";
 import StoryPage from "./components/StoryPage/StoryPage";
+import Layout from "./components/Layout/Layout";
+import { ChakraProvider } from "@chakra-ui/react";
+import myTheme from "./theme";
 
 function App() {
 	return (
-		<BrowserRouter>
-			<Routes>
-				<Route path="/" element={<HomePage />} />
-				<Route path="/about" element={<StoryPage />} />
-				<Route path="/story/:id" element={<StoryPage />} />
-			</Routes>
-		</BrowserRouter>
+		<>
+			<Layout>
+				<ChakraProvider theme={myTheme}>
+					<Routes>
+						<Route path="/" element={<HomePage />} />
+						<Route path="/about" element={<StoryPage />} />
+						<Route path="/story/:id" element={<StoryPage />} />
+					</Routes>
+				</ChakraProvider>
+			</Layout>
+		</>
 	);
 }
 
