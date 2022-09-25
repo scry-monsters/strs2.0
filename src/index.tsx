@@ -6,14 +6,15 @@ import App from "./App";
 import "./index.css";
 import { BrowserRouter } from "react-router-dom";
 import { ColorModeScript } from "@chakra-ui/react";
-import myTheme from "./theme";
+import theme from "./theme";
+
 const container = document.getElementById("root")!;
 const root = createRoot(container);
 
 root.render(
 	<Provider store={store}>
 		<BrowserRouter>
-			<ColorModeScript initialColorMode={myTheme.config.initialColorMode} />
+			<ColorModeScript initialColorMode={theme.config.initialColorMode} />
 			<App />
 		</BrowserRouter>
 	</Provider>

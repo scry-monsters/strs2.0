@@ -2,6 +2,7 @@ import React from "react";
 import classNames from "classnames";
 import classes from "./HeroSection.module.scss";
 import meAvatar from "./../../images/meram.jpeg";
+import { Heading } from "@chakra-ui/react";
 const HeroSection = () => {
 	return (
 		<div
@@ -20,11 +21,13 @@ const HeroSection = () => {
 			<div
 				className={classNames("col-12 text-center", classes.text__container)}
 			>
-				<h2 className="pt-2">Hey</h2>
-				<h5>
+				<Heading as="h2" size="md" className="pt-2">
+					Hey
+				</Heading>
+				<Heading as="h4" size="md" fontSize="xl">
 					glad you made it here, its been a while since we talked. hope
 					you&apos;ll enjoy my stories.
-				</h5>
+				</Heading>
 			</div>
 		</div>
 	);
