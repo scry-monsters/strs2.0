@@ -4,8 +4,15 @@ import StoryPage from "./components/StoryPage/StoryPage";
 import { ChakraProvider } from "@chakra-ui/react";
 import theme from "./theme";
 import NavBar from "./components/NavBar/NavBar";
+import { useEffect, useState } from "react";
 
 function App() {
+	const [aziz, setAziz] = useState(1);
+
+	useEffect(() => {
+		setAziz((prefv) => prefv + 2);
+	}, []);
+	console.log(aziz);
 	return (
 		<>
 			<ChakraProvider theme={theme}>

@@ -9,6 +9,8 @@ const config: ThemeConfig = {
   useSystemColorMode: true,
 }
 
+
+
 // 3. extend the theme
 const theme = extendTheme({ config, 
   fonts: {
@@ -19,10 +21,11 @@ const theme = extendTheme({ config,
     p:{
       fontWeight: 'semibold',
     },
-    h2:{
+    h5:{
       fontWeight: 'semibold',
+      color: "white"
     }
-  }
+  },
 })
 
 export default theme
