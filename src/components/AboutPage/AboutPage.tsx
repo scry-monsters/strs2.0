@@ -1,5 +1,5 @@
 import { Button, Heading } from "@chakra-ui/react";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useMemo } from "react";
 import HeroSection from "../HeroSection/HeroSection";
 import classNames from "classnames";
 import classes from "./AboutPage.module.scss";
@@ -9,26 +9,35 @@ interface Text {
 	textValue: string;
 	image: string;
 }
+
 const AboutPage = () => {
-	const texts: Text[] = [
-		{
-			id: 1,
-			textValue: "one",
-			image:
-				"https://wallpaperfordesktop.com/wp-content/uploads/2022/06/Studio-Ghibli-Wallpaper.jpg",
-		},
-		{
-			id: 2,
-			textValue: "two",
-			image: "https://wallpaperaccess.com/full/3032591.jpg",
-		},
-		{
-			id: 3,
-			textValue: "three",
-			image: "https://wallpaperaccess.com/full/42618.jpg",
-		},
-	];
+	const texts: Text[] = useMemo(
+		() => [
+			{
+				id: 1,
+				textValue: "one",
+				image:
+					"https://wallpaperfordesktop.com/wp-content/uploads/2022/06/Studio-Ghibli-Wallpaper.jpg",
+			},
+			{
+				id: 2,
+				textValue: "two",
+				image: "https://wallpaperaccess.com/full/3032591.jpg",
+			},
+			{
+				id: 3,
+				textValue: "three",
+				image: "https://wallpaperaccess.com/full/42618.jpg",
+			},
+		],
+		[]
+	);
+
 	const [text, setText] = useState(texts[0].image);
+	useEffect(() => {
+		setText(texts[0].image);
+		console.log("I worked");
+	}, [texts]);
 	const textHandler = (item: string) => {
 		setText(item);
 	};
