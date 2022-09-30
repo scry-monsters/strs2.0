@@ -14,16 +14,23 @@ const StoryCard = ({ data }: any) => {
 				<img className="" src={data.art} alt="poke" />
 			</div>
 			<div className={classNames(classes.story_card_text_container, "")}>
-				<Heading as="h5" size="sm" className={classes.text_container_title}>
+				<Heading as="h6" size="md" className={classes.text_container_title}>
 					{data.title}
 				</Heading>
-				<Heading as="h5" size="sm" className="">
+				<Heading as="h5" size="sm" fontWeight="thin" className="py-1">
 					{exzerpt}
 				</Heading>
 
 				<Link to={`/story/${data.id}`}>
 					<button>
-						<p>read {data.title.substring(0, 5)}...</p>
+						<Heading
+							style={{ marginLeft: "8px" }}
+							as="h6"
+							size="sm"
+							fontWeight="thin"
+						>
+							read {data.title.substring(0, 5)}...
+						</Heading>
 					</button>
 				</Link>
 			</div>

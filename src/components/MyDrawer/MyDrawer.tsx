@@ -1,9 +1,6 @@
 import React from "react";
 import {
-	RadioGroup,
 	Button,
-	Radio,
-	Stack,
 	Drawer,
 	DrawerOverlay,
 	DrawerBody,
@@ -12,10 +9,10 @@ import {
 	useDisclosure,
 } from "@chakra-ui/react";
 import { HamburgerIcon } from "@chakra-ui/icons";
+import { Link } from "react-router-dom";
 
 const MyDrawer = () => {
 	const { isOpen, onOpen, onClose } = useDisclosure();
-
 	return (
 		<>
 			<Button style={{ backgroundColor: "transparent" }} onClick={onOpen}>
@@ -28,7 +25,12 @@ const MyDrawer = () => {
 						Stories Menu
 					</DrawerHeader>
 					<DrawerBody>
-						<p>Home</p>
+						<Link to="/" onClick={() => onClose()}>
+							<p>Home</p>
+						</Link>
+						<Link to={"/about"} onClick={() => onClose()}>
+							<p>About</p>
+						</Link>
 						<p>About</p>
 						<p>Instagram</p>
 					</DrawerBody>

@@ -16,3 +16,10 @@
         width: 500px;
     }
 }
+
+@media only screen and (max-width: 600px) {
+    .image__text__container{
+        height: 70vh;
+        margin-bottom: 50px;
+    }
+}

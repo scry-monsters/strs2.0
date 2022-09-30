@@ -1,4 +1,4 @@
-import { Heading, useColorMode, useColorModeValue } from "@chakra-ui/react";
+import { Heading, useColorModeValue } from "@chakra-ui/react";
 import classNames from "classnames";
 import React from "react";
 import { useParams } from "react-router-dom";
@@ -12,7 +12,7 @@ const StoryPage = () => {
 	let textToBeSplit = story.storyItself;
 	let storyArr = textToBeSplit.split("SKRR");
 	// const { toggleColorMode } = useColorMode(); toggles the color mode, also can be added to any element with onClick method
-	const colorModeValue = useColorModeValue("black", "white");
+	const colorModeValue = useColorModeValue("black", "#d3d3d3");
 	React.useEffect(() => {
 		// 👇️ scroll to top on page load
 		window.scrollTo({ top: 0, left: 0, behavior: "smooth" });

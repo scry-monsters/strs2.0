@@ -21,10 +21,10 @@ const HeroSection = () => {
 			<div
 				className={classNames("col-12 text-center", classes.text__container)}
 			>
-				<Heading as="h2" size="md" className="pt-2">
+				<Heading as="h2" size="md" className="pt-3 pb-2" fontWeight="semibold">
 					Hey
 				</Heading>
-				<Heading as="h4" size="md" fontSize="xl">
+				<Heading as="h4" size="md" fontWeight="thin">
 					glad you made it here, its been a while since we talked. hope
 					you&apos;ll enjoy my stories.
 				</Heading>
