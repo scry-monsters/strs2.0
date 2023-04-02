@@ -7,7 +7,7 @@ import { Heading } from "@chakra-ui/react";
 const StoryCard = ({ data }: any) => {
 	let exzerpt = data.storyItself.substring(0, 80) + "...";
 	return (
-		<div className={classNames(classes.story_card_main)}>
+		<div className={classNames(classes.story_card_main)} key={data.id}>
 			<div
 				className={classNames(classes.story_card_image_container, " d-flex")}
 			>
