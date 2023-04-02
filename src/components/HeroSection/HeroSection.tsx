@@ -27,6 +27,7 @@ const HeroSection = () => {
 				<Heading as="h4" size="md" fontWeight="thin">
 					glad you made it here, its been a while since we talked. hope
 					you&apos;ll enjoy my stories.
+					!!The site is under construction till I finish my Diploma!!
 				</Heading>
 			</div>
 		</div>
