@@ -7,7 +7,6 @@ import "./index.css";
 import { BrowserRouter } from "react-router-dom";
 import { ColorModeScript } from "@chakra-ui/react";
 import theme from "./theme";
-
 const container = document.getElementById("root")!;
 const root = createRoot(container);
 

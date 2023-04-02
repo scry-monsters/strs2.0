@@ -28,11 +28,15 @@ const MyDrawer = () => {
 						<Link to="/" onClick={() => onClose()}>
 							<p>Home</p>
 						</Link>
+						<Link to={"/stories"} onClick={() => onClose()}>
+							<p>Stories</p>
+						</Link>
 						<Link to={"/about"} onClick={() => onClose()}>
 							<p>About</p>
 						</Link>
-						<p>About</p>
-						<p>Instagram</p>
+						<Link to={"/socials"} onClick={() => onClose()}>
+							<p>Socials</p>
+						</Link>
 					</DrawerBody>
 				</DrawerContent>
 			</Drawer>

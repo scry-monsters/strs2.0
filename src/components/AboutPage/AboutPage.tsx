@@ -3,6 +3,7 @@ import React, { useEffect, useState, useMemo } from "react";
 import HeroSection from "../HeroSection/HeroSection";
 import classNames from "classnames";
 import classes from "./AboutPage.module.scss";
+import axios from "axios";
 
 interface Text {
 	id: number;
@@ -33,10 +34,17 @@ const AboutPage = () => {
 		[]
 	);
 
+	let fetchedData = async () => {
+		const { data } = await axios.get(
+			"https://jsonplaceholder.typicode.com/todos?_limit=10"
+		);
+		console.log(data);
+	};
+
 	const [text, setText] = useState(texts[0].image);
 	useEffect(() => {
 		setText(texts[0].image);
-		console.log("I worked");
+		fetchedData();
 	}, [texts]);
 	const textHandler = (item: string) => {
 		setText(item);
